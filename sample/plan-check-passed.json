@@ -1,0 +1,9 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "ExitPlanMode",
+  "cwd": "/home/dev/project",
+  "tool_input": {
+    "plan": "# Add retries to the sync job\n\nEdit scripts/retry.mjs so a failed call is tried three times.\n\n## Verification\n\n- npm test covers one, two and three failures.\n",
+    "planFilePath": "/home/dev/plans/add-retries.txt"
+  }
+}

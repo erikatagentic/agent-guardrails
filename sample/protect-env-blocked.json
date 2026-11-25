@@ -1,0 +1,8 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "Read",
+  "tool_input": {
+    "file_path": "/home/dev/project/.env.local"
+  },
+  "cwd": "/home/dev/project"
+}

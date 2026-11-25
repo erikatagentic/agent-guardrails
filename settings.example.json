@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node \"$HOME/.claude/guards/force-push-guard.mjs\"" },
+          { "type": "command", "command": "node \"$HOME/.claude/guards/branch-guard.mjs\" pre" },
+          { "type": "command", "command": "node \"$HOME/.claude/guards/protect-env.mjs\"" },
+          { "type": "command", "command": "node \"$HOME/.claude/guards/pr-review-gate.mjs\"" }
+        ]
+      },
+      {
+        "matcher": "Read|Grep|Glob",
+        "hooks": [
+          { "type": "command", "command": "node \"$HOME/.claude/guards/protect-env.mjs\"" }
+        ]
+      },
+      {
+        "matcher": "ExitPlanMode",
+        "hooks": [
+          { "type": "command", "command": "node \"$HOME/.claude/guards/exitplan-verification-check.mjs\"" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node \"$HOME/.claude/guards/branch-guard.mjs\" post" }
+        ]
+      }
+    ]
+  }
+}

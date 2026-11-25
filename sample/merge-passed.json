@@ -1,0 +1,8 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "merge-reviewed 12"
+  },
+  "cwd": "/home/dev/project"
+}

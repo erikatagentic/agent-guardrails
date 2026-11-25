@@ -1,0 +1,8 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "git commit -m \"add retries\""
+  },
+  "cwd": "/home/dev/project"
+}

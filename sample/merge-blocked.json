@@ -1,0 +1,8 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "gh pr merge 12 --squash --admin"
+  },
+  "cwd": "/home/dev/project"
+}

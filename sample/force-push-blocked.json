@@ -1,0 +1,8 @@
+{
+  "session_id": "demo-session",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "git push --force-with-lease origin feature-x"
+  },
+  "cwd": "/home/dev/project"
+}

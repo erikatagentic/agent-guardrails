@@ -1,0 +1,16 @@
+{
+  "name": "agent-guardrails",
+  "version": "0.1.0",
+  "description": "Five checks that run before an AI coding agent's command or commit goes through.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "demo": "node demo.mjs",
+    "check-public": "node scripts/check-public.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Erik Hernal"
+}
